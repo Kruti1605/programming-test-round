@@ -1,0 +1,98 @@
+<p><a class="link-opacity-75" routerLink="/fetchlayout">Redriect to previous tab</a></p>
+
+<ng-template #template1>
+    <div class="container text-center">
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #template2>
+    <div class="container text-center">
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+        <div class="row half-width">
+            <div class="column">
+                <img src="assets\img3.jpg" alt="No Img" />
+            </div>
+            <div class="column">
+                <img src="assets\img3.jpg" alt="No Img" />
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #template3>
+    <div class="container text-center">
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #template4>
+    <div class="container">
+        <div class="row full-width">
+            <div class="column">
+                <img src="assets\img1.jpg" alt="No Img" />
+            </div>
+        </div>
+
+        <div class="row half-width">
+            <div class="column">
+                <img src="assets\img2.jpg" alt="No Img" />
+            </div>
+            <div class="column">
+                <img src="assets\img2.jpg" alt="No Img" />
+            </div>
+        </div>
+
+        <div class="row quarter-width">
+            <div class="column"><img src="assets\img3.jpg" alt="No Img" /></div>
+            <div class="column"><img src="assets\img3.jpg" alt="No Img" /></div>
+            <div class="column"><img src="assets\img3.jpg" alt="No Img" /></div>
+            <div class="column"><img src="assets\img3.jpg" alt="No Img" /></div>
+        </div>
+    </div>
+</ng-template>
+
+
+<div *ngIf="layout === '1:1'">
+    <ng-container *ngTemplateOutlet="template1"></ng-container>
+</div>
+
+<div *ngIf="layout === '1:2'">
+    <ng-container *ngTemplateOutlet="template2"></ng-container>
+</div>
+
+<div *ngIf="layout === '1:1:1'">
+    <ng-container *ngTemplateOutlet="template3"></ng-container>
+</div>
+
+<div *ngIf="layout === '1:2:4'">
+    <ng-container *ngTemplateOutlet="template4"></ng-container>
+</div>

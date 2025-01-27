@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.full-width .column {
+    width: 100%;
+}
+
+.half-width .column {
+    width: 50%;
+}
+
+.quarter-width .column {
+    width: 25%;
+}
+
+.column {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+}

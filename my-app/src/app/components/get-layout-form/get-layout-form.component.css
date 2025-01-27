@@ -1,0 +1,17 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
