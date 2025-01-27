@@ -13,7 +13,10 @@ Kept all the static data.
 
 Steps to execute:
 git clone "https://github.com/Kruti1605/programming-test-round.git"
+
 cd my-app
+
 npm install
+
 ng serve
 
