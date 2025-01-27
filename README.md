@@ -12,6 +12,7 @@ According to layout the product_name form is loaded with the 'n' number of field
 Kept all the static data.
 
 Steps to execute:
+
 git clone "https://github.com/Kruti1605/programming-test-round.git"
 
 cd my-app
